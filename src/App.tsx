@@ -1,13 +1,12 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import './App.css';
 
-const App = () => {
-    return (
-        <Button variant="contained" color="primary">
-            Hello World
-        </Button>
-    );
+const App: React.FC = () => {
+  return (
+    <header>
+      <div style={{ height: '100px' }}></div>
+    </header>
+  );
 };
 
 export default App;
