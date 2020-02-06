@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render and match the snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {},
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <div
+    className="App"
+  >
+    <div
+      className="container"
+    >
+      <WidgetArea
+        list={
+          Array [
+            Object {
+              "content": "SELECT THE TASKS FOR YOUR BUSINESS",
+              "height": 100,
+              "id": "select-tasks",
+            },
+            Object {
+              "content": "CURRENT TASKS",
+              "height": 370,
+              "id": "current-tasks",
+            },
+            Object {
+              "content": "LOOKING FOR GOVERNMENT ASSISTANCE",
+              "height": 100,
+              "id": "looking-for-assistance",
+            },
+            Object {
+              "content": "GOBIZ ALERTS",
+              "height": 100,
+              "id": "gobiz-alerts",
+            },
+            Object {
+              "content": "RECOMMENDED FOR YOU",
+              "height": 250,
+              "id": "recommended-for-you",
+            },
+            Object {
+              "content": "DOCUMENTS",
+              "height": 250,
+              "id": "documents",
+            },
+            Object {
+              "content": "INSIGHTS",
+              "height": 250,
+              "id": "insights",
+            },
+          ]
+        }
+        size="exLarge"
+        type="Core"
+      />
+      <WidgetArea
+        list={
+          Array [
+            Object {
+              "content": "GUIDED JOURNEYS",
+              "height": 240,
+              "id": "guided-journeys",
+            },
+            Object {
+              "content": "RECOMMENDED FOR YOU",
+              "height": 250,
+              "id": "recommended-for-you",
+            },
+            Object {
+              "content": "EVENTS",
+              "height": 250,
+              "id": "events",
+            },
+            Object {
+              "content": "CALENDAR",
+              "height": 250,
+              "id": "calendar",
+            },
+            Object {
+              "content": "QUICK LINKS",
+              "height": 180,
+              "id": "quick-links",
+            },
+          ]
+        }
+        size="small"
+        type="Support"
+      />
+    </div>
+  </div>
+  <Routes />
+</Provider>
+`;
+
+exports[`renders button when the handleClick method was triggered 1`] = `Object {}`;

@@ -1,9 +1,14 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { createRenderer } from 'react-test-renderer/shallow';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+const renderer = createRenderer();
+
+describe('<App />', () => {
+  it('should render and match the snapshot', () => {
+    renderer.render(<App />);
+    const renderedOutput = renderer.getRenderOutput();
+    expect(renderedOutput).toMatchSnapshot();
+  });
 });
