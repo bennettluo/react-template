@@ -102,5 +102,3 @@ exports[`<App /> should render and match the snapshot 1`] = `
   <Routes />
 </Provider>
 `;
-
-exports[`renders button when the handleClick method was triggered 1`] = `Object {}`;

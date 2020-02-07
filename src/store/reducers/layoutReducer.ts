@@ -1,13 +1,13 @@
 import { actionTypes } from '../../models/enums';
 
-export const layoutReducer = (state = {}, action: any) => {
+export const layoutReducer = (state: any = {}, action: any) => {
   switch (action.type) {
     case actionTypes.UPDATE_LAYOUT: {
       const { widgetType, widgets } = action.payload;
-      console.log(widgetType, widgets);
       return {
         ...state,
         layout: {
+          ...state.layout,
           [widgetType]: widgets,
         },
       };
